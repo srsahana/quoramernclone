@@ -5,6 +5,8 @@
   height: 100vh;
   width: 100vw;
   box-sizing: border-box;
+  /*background-image: url("http://qsfs.fs.quoracdn.net/-4-images.home.illo_1920.png-26-e9e6fbe02d908942.png");*/
+  background-color: white;
 }
 
 .login-content {
@@ -14,7 +16,7 @@
 }
 
 .login-content > img {
-  width: 200px;
+  width: 500px;
   object-fit: contain;
   margin: 20px;
 }
@@ -22,7 +24,7 @@
 .login-content > button {
   padding: 10px;
   margin: 50px 0px;
-  background-color: #000;
+  background-color: rgb(167, 14, 14);
   color: #fff;
   outline: none;
   border: none;

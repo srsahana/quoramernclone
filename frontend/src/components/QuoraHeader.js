@@ -71,7 +71,7 @@ function QuoraHeader() {
       <div className="qHeader-content">
         <div className="qHeader__logo">
           <img
-            src="https://video-public.canva.com/VAD8lt3jPyI/v/ec7205f25c.gif"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Quora_logo_2015.svg/1200px-Quora_logo_2015.svg.png"
             alt="logo"
           />
         </div>
