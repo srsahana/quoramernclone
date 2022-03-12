@@ -3,7 +3,7 @@ const cors = require("cors");
 const path = require("path");
 const app = express();
 const bodyParser = require("body-parser");
-const PORT = 80;
+const pORT = process.env.PORT || 80;
 const db = require("./db");
 const router = require("./routes");
 
@@ -40,6 +40,6 @@ app.get("*", (req, res) => {
 app.use(cors());
 
 //server listening
-app.listen(process.env.PORT || PORT, () => {
-  console.log(`Listening on port no ${PORT}`);
+app.listen(pORT, () => {
+  console.log(`Listening on port no ${pORT}`);
 });
