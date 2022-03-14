@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const url =
-  "mongodb://sahana:sahanaadmin@cluster0-shard-00-00.puuwd.mongodb.net:27017,cluster0-shard-00-01.puuwd.mongodb.net:27017,cluster0-shard-00-02.puuwd.mongodb.net:27017/quora?ssl=true&replicaSet=atlas-12nbsc-shard-0&authSource=admin&retryWrites=true&w=majority";
+  "mongodb://sahana:sahana@cluster0-shard-00-00.vbdyb.mongodb.net:27017,cluster0-shard-00-01.vbdyb.mongodb.net:27017,cluster0-shard-00-02.vbdyb.mongodb.net:27017/quora-final-app?ssl=true&replicaSet=atlas-12xbup-shard-0&authSource=admin&retryWrites=true&w=majority";
 
 module.exports.connect = () => {
   mongoose

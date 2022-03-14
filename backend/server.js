@@ -3,7 +3,7 @@ const cors = require("cors");
 const path = require("path");
 const app = express();
 const bodyParser = require("body-parser");
-const pORT = process.env.PORT || 80;
+const PORT = 80;
 const db = require("./db");
 const router = require("./routes");
 
@@ -27,7 +27,7 @@ app.use((req, res, next) => {
 app.use("/api", router);
 
 app.use("/uploads", express.static(path.join(__dirname, "/../uploads")));
-app.use("/uploads", express.static(path.join(__dirname, "/../frontend/build")));
+app.use(express.static(path.join(__dirname, "/../frontend/build")));
 
 app.get("*", (req, res) => {
   try {
@@ -40,6 +40,6 @@ app.get("*", (req, res) => {
 app.use(cors());
 
 //server listening
-app.listen(pORT, () => {
-  console.log(`Listening on port no ${pORT}`);
+app.listen(process.env.PORT || PORT, () => {
+  console.log(`Listening on port no ${PORT}`);
 });
